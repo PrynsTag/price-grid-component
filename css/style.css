@@ -1,0 +1,212 @@
+/* ----------------------------------------------------------- */
+/* ------------------------- BASIC SETUP ----------------------*/
+/* ----------------------------------------------------------- */
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --gray: hsl(204, 43%, 93%);
+    --gray-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    background-color: var(--gray);
+    margin: 100px 600px;
+    background-color: #fff;
+    box-shadow: 0 0 100px 5px var(--gray-blue);
+    border-radius: 5px;
+}
+
+.clear-fix {zoom: 1;}
+.clear-fix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------------------- */
+/* -------------------------- REUSABLE ------------------------*/
+/* ----------------------------------------------------------- */
+
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*--------- HEADING ------------*/
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+#heading {
+    padding: 30px 40px;
+}
+
+.main-header {
+    color: var(--cyan);
+    margin: 10px 0 20px;
+}
+
+.sub-header {
+    color: var(--yellow);
+    margin: 15px 0;
+}
+
+/*--------- PARAGPRAHS ------------*/
+
+.info {
+    color: var(--gray-blue);
+    /* width: 80%; */
+}
+
+
+.subscription {
+    background-color: #2cc2ba;
+    margin: 0;
+    padding: 30px 40px;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+}
+
+.subscription p {
+    color: var(--gray);
+    padding-bottom: 10px;
+}
+
+.subscription span {
+    font-size: 200%;
+    font-weight: 700;
+}
+
+
+.why-us {
+    background-color: #71cfcb;
+    margin: 0;
+    padding: 30px 40px;
+    color: #fff;
+    height: auto;
+    border-bottom-right-radius: 5px;
+}
+
+.why-us p {
+    color: var(--gray);
+    width: 91%;
+    line-height: 145%;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--yellow);
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 50px 5px rgba(104, 104, 104, 0.116);
+}
+
+
+
+/* ----------------------------------------------------------- */
+/* ---------------------------- FOOTER ------------------------*/
+/* ----------------------------------------------------------- */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* ----------------------------------------------------------- */
+/* --------------------------- QUERIES ------------------------*/
+/* ----------------------------------------------------------- */
+
+@media only screen and (max-width: 1600px) {
+    main {
+        margin: 100px 500px;
+    }
+
+    #wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    main {
+        margin: 100px 400px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    main {
+        margin: 100px 300px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        margin: 100px 200px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        margin: 100px 100px;
+    }
+
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .subscription {
+        border-bottom-left-radius: 0;
+        padding: 30px 25px;
+
+    }
+
+    .why-us {
+        border-bottom-left-radius: 5px;
+        padding: 30px 25px;
+
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    main {
+        margin: 150px 70px;
+    }
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    main {
+        margin: 150px 30px;
+    }
+
+
+    #heading {
+        padding: 30px 25px;
+    }
+
+}
