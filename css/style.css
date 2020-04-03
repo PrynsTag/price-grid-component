@@ -23,17 +23,8 @@ main {
     background-color: var(--gray);
     margin: 100px 600px;
     background-color: #fff;
-    box-shadow: 0 0 100px 5px var(--gray-blue);
+    box-shadow: 0 0 30px 20px #f1efef;
     border-radius: 5px;
-}
-
-.clear-fix {zoom: 1;}
-.clear-fix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
 }
 
 /* ----------------------------------------------------------- */
@@ -47,13 +38,26 @@ main {
 }
 
 /*--------- HEADING ------------*/
-h1 {
-    font-size: 150%;
-}
 
 h2 {
     font-size: 100%;
 }
+
+/*--------- BUTTON ------------*/
+
+.btn {
+    width: 100%;
+    background-color: var(--yellow);
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 50px 5px rgba(104, 104, 104, 0.116);
+}
+
+/* ----------------------------------------------------------- */
+/* -------------------------- HEADER -------------------------*/
+/* ----------------------------------------------------------- */
 
 #heading {
     padding: 30px 40px;
@@ -62,6 +66,7 @@ h2 {
 .main-header {
     color: var(--cyan);
     margin: 10px 0 20px;
+    font-size: 150%;
 }
 
 .sub-header {
@@ -69,12 +74,14 @@ h2 {
     margin: 15px 0;
 }
 
-/*--------- PARAGPRAHS ------------*/
-
 .info {
     color: var(--gray-blue);
-    /* width: 80%; */
 }
+
+
+/* ----------------------------------------------------------- */
+/* ----------------------- SUBSCRIPTION -----------------------*/
+/* ----------------------------------------------------------- */
 
 
 .subscription {
@@ -95,6 +102,9 @@ h2 {
     font-weight: 700;
 }
 
+/* ----------------------------------------------------------- */
+/* -------------------------- WHY US --------------------------*/
+/* ----------------------------------------------------------- */
 
 .why-us {
     background-color: #71cfcb;
@@ -115,17 +125,6 @@ h2 {
     padding-bottom: 20px;
 }
 
-.btn {
-    width: 100%;
-    background-color: var(--yellow);
-    padding: 15px 50px;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 20px;
-    box-shadow: 0 0 50px 5px rgba(104, 104, 104, 0.116);
-}
-
-
 
 /* ----------------------------------------------------------- */
 /* ---------------------------- FOOTER ------------------------*/
@@ -133,6 +132,8 @@ h2 {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
 
 /* ----------------------------------------------------------- */
 /* --------------------------- QUERIES ------------------------*/
